@@ -49,12 +49,12 @@ gs2 = gd.GridSpec(2, 1, height_ratios = [4,1])
 ax2 = plt.subplot(gs2[0])
 
 ax2.errorbar(asc, sb, yerr=sbe, color='orangered', fmt='.', alpha=0.5, label='Data')
-ax2.plot(xx, sersic(xx, *popt), color='orangered', label='Best fit Sersic profile')
+ax2.plot(xx, sersic(xx, *popt), color='orangered', label='Best fit Exponential profile')
 ax2.grid()
 ax2.legend(loc='best')
 plt.subplots_adjust(hspace = 0.15)
 plt.ylabel('Surface brightness')
-plt.title('Exponential (disk) profile for M81 Galaxy')
+plt.title('Exponential profile for M81 Galaxy')
 
 
 ax22 = plt.subplot(gs2[1], sharex = ax2)
